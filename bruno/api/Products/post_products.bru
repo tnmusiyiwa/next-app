@@ -1,0 +1,18 @@
+meta {
+  name: post_products
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Bunless Burger",
+    "price": 11.00
+  }
+}
